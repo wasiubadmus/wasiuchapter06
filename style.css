@@ -1,39 +1,96 @@
-body {
-    background-color: #FFFFFF;
-    color: #666666;
-    font-family: 'Georgia';
-    font-size: 12px;
-}
-
-#header {
-    background-color: #000033;
-    color: #FFFFFF;
-}
-
-h1 {
-    line-height: 200%;
-}
-
-#links,
-#first,
-#sec,
-#third,
-#fourth {
-    display: inline;
-    background-color: #90C7E3;
-    color: blue;
-}
-
-h2 {
-    color: #3399CC;
-}
-
-#resort {
-    color: #000033;
+/* Universal selector */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Wrapper id */
+  #wrapper {
+    background: linear-gradient(to bottom, #99CCFF, #FFFFFF);
+  }
+  
+  /* Body element selector */
+  body {
+    background-color: #EAEAEA;
+    background-image: none;
+    background-repeat: no-repeat;
+  }
+  
+  /* Header area */
+  header {
+    background-image: none;
+    height: 120px;
+  }
+  
+  /* h1 element selector */
+  h1 {
+    font-size: 3em;
+    letter-spacing: 0.25em;
+  }
+  
+  /* Left-column navigation area */
+  nav {
+    float: left;
+    width: 160px;
+    padding: 0;
     font-size: 1.2em;
-}
-
-#footer {
-    font-style: italic;
-    font-size: 0.7em;
-} 
+  }
+  
+  /* Link, :visited, and :hover pseudo-classes for navigation hyperlinks */
+  nav a {
+    color: #5C7FA3;
+  }
+  nav a:visited {
+    color: #344873;
+  }
+  nav a:hover {
+    color: #A52A2A;
+  }
+  
+  /* Nav ul descendant selector */
+  nav ul {
+    list-style-type: none;
+    padding-left: 1em;
+  }
+  
+  /* Nav element */
+  nav {
+    position: fixed;
+  }
+  
+  /* Right-column main content area */
+  main {
+    background-color: #FFFFFF;
+    margin-left: 170px;
+    overflow: auto;
+  }
+  
+  /* Hero image areas */
+  #homehero,
+  #yurthero,
+  #trailhero {
+    margin-left: 170px;
+  }
+  
+  /* Footer area */
+  footer {
+    background-color: #FFFFFF;
+    margin-left: 170px;
+  }
+  
+  /* Section element selector */
+  section {
+    float: left;
+    width: 33%;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  
+  /* Hyperlinks in header area */
+  header a,
+  header a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  header a:hover {
+    color: #90C7E3;
+  } 
